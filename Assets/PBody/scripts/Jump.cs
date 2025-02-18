@@ -10,7 +10,7 @@ public class Jump : MonoBehaviour
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
-        playerRb = AddForce(VEctor3.up * 100);
+        playerRb.AddForce(Vector3.up * 100);
     }
 
     // Update is called once per frame
